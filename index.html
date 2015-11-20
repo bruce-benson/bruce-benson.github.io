@@ -17,34 +17,6 @@
         <span>Bruce Benson</span>
         Interactive Designer
       </h3>
-      <!-- <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <ul class="menu">
-        <li>
-          <a href="">Project One</a>
-        </li>
-        <li>
-          <a href="">Project One</a>
-        </li>
-        <li>
-          <a href="">Project One</a>
-        </li>
-        <li>
-          <a href="">Project One</a>
-        </li>
-        <li>
-          <a href="">Project One</a>
-        </li>
-        <li>
-          <a href="">Project One</a>
-        </li>
-        <li>
-          <a href="">Resume</a>
-        </li>
-      </ul> -->
     </nav>
     <!-- main content -->
     <section class="content">
@@ -102,7 +74,7 @@
               Mobile App
             </span>
             </p>
-            <p class="cta">
+            <p class="cta" id="sam" href="#samModal">
               View Project >
             </p>
           </div>
@@ -118,7 +90,7 @@
               Production Work
             </span>
             </p>
-            <p class="cta">
+            <p class="cta" id="ms" href="#msModal">
               View Project >
             </p>
           </div>
@@ -134,7 +106,7 @@
               Website Design
             </span>
             </p>
-            <p class="cta">
+            <p class="cta" id="cupcake" href="#cupcakeModal">
               View Project >
             </p>
           </div>
@@ -151,7 +123,7 @@
               Infographic Design
             </span>
             </p>
-            <p class="cta">
+            <p class="cta" id="ice" href="#iceModal">
               View Project >
             </p>
           </div>
@@ -167,7 +139,7 @@
               Comic TV/Mobile App Concept &amp; Design
             </span>
             </p>
-            <p class="cta">
+            <p class="cta" id="comic" href="#comicModal">
               View Project >
             </p>
           </div>
@@ -179,13 +151,14 @@
       <a target="_blank" href="http://bbenson6.tumblr.com/">View blog ></a>
     </section>
 
-    <!--DEMO01-->
+    <!--////////// MODALS //////////-->
+
+    <!--Three Project/One Day-->
     <div id="threeModal" class="port-modal">
         <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
         <a href="" class="close-threeModal close">
             <img src="/img/icon-close.svg"/>
         </a>
-
         <div class="modal-content">
               <header>
                 <h1>One-day Website Redesigns</h1>
@@ -217,7 +190,7 @@
                   <img src="/img/target-before.png" />
                 </div>
                 <div class="grid__col-9 new-design">
-                  <img src="/img/target-before.png" />
+                  <img src="/img/three-target.jpg" />
                 </div>
                 <!-- Archos Project -->
                 <div class="grid__col-12 title">
@@ -272,11 +245,228 @@
               </section>
         </div>
     </div>
+    <!-- SAM App -->
+    <div id="samModal" class="port-modal">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+      <a href="" class="close-samModal close">
+          <img src="/img/icon-close.svg"/>
+      </a>
+      <div class="modal-content">
+        <header>
+          <h1>Seattle Art Museum App</h1>
+        </header>
+        <section class="grid">
+          <div class="grid__col-12 about">
+            <p>
+              The task was to create a mobile app design to match the sleekness and modern aesthetic of the S.A.M.
+            </p>
+          </div>
+          <!-- Target Project -->
+          <div class="grid__col-3">
+            <img src="/img/sam-1.png" width="150px" />
+          </div>
+          <div class="grid__col-3">
+            <img src="/img/sam-2.png" width="150px" />
+          </div>
+          <div class="grid__col-3">
+            <img src="/img/sam-3.png" width="150px" />
+          </div>
+          <div class="grid__col-3">
+            <img src="/img/sam-4.png" width="150px" />
+          </div>
+          <div class="grid__col-3">
+            <img src="/img/sam-5.png" width="150px" />
+          </div>
+          <div class="grid__col-3">
+            <img src="/img/sam-6.png" width="150px" />
+          </div>
+          <div class="grid__col-3">
+            <img src="/img/sam-7.png" width="150px" />
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- MS Production -->
+    <div id="msModal" class="port-modal">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+      <a href="" class="close-msModal close">
+          <img src="/img/icon-close.svg"/>
+      </a>
+      <div class="modal-content">
+        <header>
+          <h1>Microsoft/Xbox Production Designer</h1>
+        </header>
+        <section class="grid">
+          <div class="grid__col-12 about">
+            <p>
+              While at Microsoft, I worked on a high-volume, tight deadline project, modifying UI designs for mulitple languages, including non-Latin based scripts (localization).
+            </p>
+          </div>
+          <!-- Target Project -->
+          <div class="grid__col-12">
+            <p class="label">
+              Example Comps:
+            </p>
+          </div>
+          <div class="grid__col-4">
+            <img src="/img/ms-mobile-1.png" />
+          </div>
+          <div class="grid__col-4">
+            <img src="/img/ms-mobile-2.png" />
+          </div>
+          <div class="grid__col-4">
+            <img src="/img/ms-mobile-3.png" />
+          </div>
+          <div class="grid__col-6">
+            <img src="/img/ms-tv-1.png" />
+          </div>
+          <div class="grid__col-6">
+            <img src="/img/ms-tv-2.png" />
+          </div>
+          <div class="grid__col-6">
+            <img src="/img/ms-tv-3.png" />
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Cupcake Website -->
+    <div id="cupcakeModal" class="port-modal">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+      <a href="" class="close-cupcakeModal close">
+          <img src="/img/icon-close.svg"/>
+      </a>
+      <div class="modal-content">
+        <header>
+          <h1>Wicked Sweets Bakery Website Design</h1>
+        </header>
+        <section class="grid">
+          <div class="grid__col-12 about">
+            <p>
+              The Wicked Sweets Baking Company is a private start-up company that
+              produces pastries- primarily cupcakes, for distribution in the Tacoma area.
+              As a new company, the Wicked Sweets Baking Company does not have
+              the capital to invest in running and maintaining an e-commerce site, and
+              instead will use an email client as the primary ordering mechanism.
+            </p>
+            <p>
+              My approach was to organize the content into a one-page site and use muted user interface colors to accent the bright
+              color cupcake photography.
+            </p>
+          </div>
+          <div class="grid__col-6">
+            <img src="/img/cupcake-1.png" />
+          </div>
+          <div class="grid__col-6">
+            <img src="/img/cupcake-2.png" />
+          </div>
+          <div class="grid__col-6">
+            <img src="/img/cupcake-3.png" />
+          </div>
+          <div class="grid__col-6">
+            <img src="/img/cupcake-4.png" />
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Ice Age -->
+    <div id="iceModal" class="port-modal">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+      <a href="" class="close-iceModal close">
+          <img src="/img/icon-close.svg"/>
+      </a>
+      <div class="modal-content">
+        <header>
+          <h1>Sea Ice Decline Infographic</h1>
+        </header>
+        <section class="grid">
+          <div class="grid__col-12 about">
+            <p>
+              The current The National Sea Ice Data Center (NSIDC) site is utilitarian, which may be intimidating and difficult for younger students to approach, preventing younger people from not only accessing this great resource, but from being involved in, and understanding, the science behind climate change.
+            </p>
+            <img src="/img/ice-1.jpg"/>
+            <p>
+              My proposed solution is an interactive information chart, that shows the change in arctic sea ice levels over the past 30 years, as a demonstration of how NSIDC data can be used to create narratives and understanding of the data NSIDC provides. The infographic would be accessed through the homepage of the NSIDC site, opening in a separate window.
+            </p>
+          </div>
+          <div class="grid__col-6">
+            <img src="/img/ice-2.jpg" />
+          </div>
+          <div class="grid__col-6">
+            <img src="/img/ice-3.jpg" />
+          </div>
+          <div class="grid__col-12">
+            <p class="label">
+              Solution:
+            </p>
+            <img src="/img/ice-4.jpg" />
+          </div>
+          <div class="grid__col-12">
+            <a target="_blank" href="/seaice/index.html" class="cta">View Interactive Project ></a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Comic App -->
+    <div id="comicModal" class="port-modal">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+      <a href="" class="close-comicModal close">
+          <img src="/img/icon-close.svg"/>
+      </a>
+      <div class="modal-content">
+        <header>
+          <h1>DC Reframer Comic App</h1>
+        </header>
+        <section class="grid">
+          <div class="grid__col-12 about">
+            <p>
+              Digital sales of comic books pale in comparison to DC's other media, despite being the source material for their storytelling. The challenge is how to bring the comic book experience beyond current digital solutions and create an experience that can compete with film, television, and video games.
+            </p>
+            <p>
+              The proposed solution to the challenge is a new digital format that allows a comic book to be read on a four-inch screen just as easily as it can be read on a widescreen TV.
+            </p>
+          </div>
+          <div class="grid__col-12">
+            <img src="/img/comic-wires.jpg" />
+          </div>
+          <div class="grid__col-12 about">
+            <p>
+              The solution of formatting was to undertake a study of visual storytelling and the human eye to identify the shortcomings in current methods of adapting media across screens. This lead to the exploration of a second screen application and the development adaptive content guidelines.
+            </p>
+            <p>
+              The process was to identify how to seamlessly transition between small and large screens. This is a user experience issue, one that makes it difficult for comics to compete on platforms where audiences spend their discretionary income.
+            </p>
+          </div>
+          <div class="grid__col-12">
+            <img src="/img/comic-visual.jpg" />
+          </div>
+          <div class="grid__col-12 about">
+            <p>
+              The proposed solution is a comics reader, or media player, that serves the best user experience through adaptive content strategies, wherever the user engages the application. This means a second screen application that allows audiences to transition reading across devices and screen sizes wherever they are, with content optimized for clarity.
+            </p>
+            <p>
+              This clarity is achieved through adaptive content strategies that take into account color, space, depth, scale, and motion to serve the customer a screen specific visual composition.
+            </p>
+          </div>
+          <div class="grid__col-12">
+            <a target="_blank" href="/pdf/dc-reframer.pdf" class="cta">View Full Case Study ></a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!--////////// [end] MODALS //////////-->
 
     <footer>
       <p>
         Contact me:
       </p>
+      <a target="_blank" href="pdf/bruce-benson-resume.pdf">
+        Resume >
+      </a>
       <a target="_blank" href="https://www.linkedin.com/in/bruce-benson-415352b2">
         LinkedIn >
       </a>

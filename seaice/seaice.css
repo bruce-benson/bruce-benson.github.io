@@ -1,0 +1,200 @@
+/* Sea Ice Styles */
+body {
+
+	background: #e6f4f6;
+	padding: 20px;
+	text-align: center;
+
+}
+
+.wrapper {
+
+	max-width: 1250px;
+	display: inline-block;
+
+}
+
+* {
+
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	letter-spacing: 2px;
+	padding: 0;
+	margin: 0;
+
+}
+
+h1 {
+
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+
+}
+
+.percent {
+
+	color: red;
+	padding: 10px 0;
+	font-size: 2.5em;
+
+}
+
+h3 {
+
+	text-transform: uppercase;
+	font-weight: 700;
+
+}
+
+p {
+
+	font-weight: 300;
+	text-align: left;
+
+}
+
+.note {
+
+	font-size: 10px;
+	color: grey;
+	padding-top: 20px;
+	margin: 0;
+	text-align: center;
+
+}
+
+/*canvas {
+
+	background: white;
+	padding: 20px;
+
+}
+*/
+.chart {
+
+	width: 100% !important;
+    max-width: 500px;
+    height: auto !important;
+    background: white;
+	padding: 20px;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+.chart:not(:first-child) {
+
+	margin-top: 10px;
+
+}
+
+.barchart, .linechart, .world {
+
+	max-width: 100%;
+
+}
+
+.chart aside {
+
+	padding: 20px 0;
+
+}
+
+.chart aside img {
+
+	max-width: calc(100% - 200px);
+	display: inline-block;
+
+}
+
+.chart aside h1 {
+
+	max-width: 200px;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+.global {
+
+	float: right;
+	margin: 20px 0;
+
+}
+
+.intro {
+
+	background: white;
+	padding: 20px;
+	margin-top: 25px;
+
+}
+
+.timeline {
+
+	padding-bottom: 20px;
+	/*text-align: center;*/
+
+}
+
+.timeline li {
+
+	display: inline-block;
+	list-style: none;
+	border: 1px solid white;
+	padding: 5px 10px;
+	margin-top: 5px;
+	cursor: pointer;
+	font-weight: 300;
+
+}
+
+.timeline li:hover, .timeline li.selected  {
+
+	background: #fff100;
+	border: 1px solid #fff100;
+
+}
+
+.rows {
+
+	width:100%;
+
+}
+
+.rows > section {
+
+	width: 100%;
+	float: none;
+
+}
+
+.rows:after {
+
+	content: "";
+	display: table;
+	clear: both;
+
+}
+
+@media (min-width: 900px) {
+
+	.charts, .global {
+
+		width: 45%;
+		vertical-align: top;
+		display: inline-block;
+
+		}
+
+	.rows > section {
+
+		width: 50%;
+		vertical-align: top;
+		float: left;
+		overflow: hidden;
+
+	}
+
+}
