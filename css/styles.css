@@ -245,22 +245,16 @@ nav h3 span {
 
 }
 
-.port-modal .close {
-  position: absolute;
-  left: 12%;
-  top: 5%;
-}
-
-.port-modal .close img {
-  width: 15px;
-  height: 15px;
+.port-modal {
+  max-width: none;
+  width: 80%;
 }
 
 .port-modal .modal-content {
   background: white;
-  width: 80%;
-  margin: 0 10%;
-  padding: 0 20px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .port-modal header h1 {
@@ -372,5 +366,9 @@ a:hover {
 
   .port-cube .go-to-page {
     right: 0;
+  }
+
+  .port-modal {
+    width: 90%;
   }
 }
