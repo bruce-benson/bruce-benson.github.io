@@ -9,6 +9,10 @@ body {
   margin: 0;
 }
 
+img {
+  flex: none; /* because IE is a jerk. */
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -150,6 +154,7 @@ nav h3 span {
 
 .hero img {
   width: 50px;
+  height: 50px;
 }
 
 .port-cube {
@@ -297,6 +302,7 @@ nav h3 span {
 
 .port-modal img {
   max-width: 100%;
+  flex: none !important;
 }
 
 .other-things {
