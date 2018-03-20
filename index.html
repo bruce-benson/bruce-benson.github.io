@@ -8,15 +8,19 @@
     <title>Bruce Benson, Interactive Designer</title>
   </head>
   <body>
-    <header class="home"><img class="logo" src="assets/img/bruce.svg">
-      <p class="opening-text">My name is Bruce Benson and I’m a designer in Seattle, WA. This is my 2018 portfolio - in progress/under construction - check back for updates!</p>
-    </header>
-    <ul class="productTiles" id="work">
-      <li class="productTiles-tile xbox"><a href="xbox.html"><span>Xbox Design Studio</span></a></li>
-      <li class="productTiles-tile shudder"><a href="shudder.html"><span>Shudder</span></a></li>
-      <li class="productTiles-tile"><a target="_blank" href="assets/img/resume/bruce_benson_resume.pdf"><span>Resume</span></a></li>
-      <li class="productTiles-tile"><a href="https://www.linkedin.com/in/bruce-benson-415352b2/"><span>LinkedIn</span></a></li>
-    </ul>
+    <div class="home-page">
+      <header class="home">
+        <p class="opening-text">My name is <span>Bruce Benson </span>and I’m a <span>Designer </span>in Seattle, WA. </p><img class="logo" src="assets/img/bruce.svg">
+        <p class="description">I'm an interactive designer, with recent work as a designer on the Microsoft Xbox team. I strive to come up with design solutions catered to the end user.<br><br>In my free time, you can find me watching horror movies <span>(I highly recommend The Ritual if you haven't seen it)</span>, playing Call of Duty, or tolerating my girlfriend's cats.</p>
+        <div class="contact"><a target="_blank" href="assets/img/resume/bruce_benson_resume.pdf"><img src="assets/img/resume.png"></a><a href="https://www.linkedin.com/in/bruce-benson-415352b2/"><img src="assets/img/linkedin.png"></a></div>
+      </header>
+      <ul class="productTiles" id="work">
+        <li class="productTiles-tile xbox"><a href="xbox.html">
+            <div class="image"></div><span>XBOX</span><span>UI/Production Design</span></a></li>
+        <li class="productTiles-tile shudder"><a href="shudder.html">
+            <div class="image"></div><span>SHUDDER</span><span>Customer Experience Design (spec)</span></a></li>
+      </ul>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="./assets/js/paraxify.min.js"></script>
     <script src="./assets/js/index.js"></script>
