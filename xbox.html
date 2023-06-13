@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--include head-->
+    <head>
+        <title>Bruce Benson, some kind of designer</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&amp;display=swap" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <style type="text/css">
+            /* body>*:not(#loading) {
+                visibility: hidden;
+                opacity: 0;
+            } */
+
+            #loading {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: white;
+                z-index: 10000;
+                position: relative;
+            }
+
+            #loading>span {
+                padding-top: calc(100vh - 50%);
+                display: block;
+                font-size: 82px;
+                font-weight: 900;
+                font-style: italic;
+                line-height: 0.77;
+                letter-spacing: -2.89px;
+                transform: rotate(-5deg);
+            }
+
+            #loading>img {
+                animation: rotate .3s cubic-bezier(0.4, 0, 1, 1) infinite;
+                width: 100px;
+            }
+
+            #loading.hidden {
+                display: none;
+            }
+
+            @keyframes rotate {
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+        <link href="app.css" rel="stylesheet">
+    </head>
+
+    <body class="project xbox">
+        <!--include loader-->
+        <div id="loading"><img src="./assets/images/color-spinner.png" alt="website is loading" /></div>
+        <!--include nav-->
+        <nav><a class="logo" href="./index.html">Bruce Benson</a><button id="nav-trigger" aria-label="open navigation menu" aria-haspopup="true"></button>
+            <ul class="nav-links hidden">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./office.html">Office 365 Commerce</a></li>
+                <li><a href="./azure.html">Azure Playfab</a></li>
+                <li><a href="./tmobile.html">T-Mobile DIGITS</a></li>
+                <li><a href="./xbox.html">Xbox Design Studio</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
+        <!-- main -->
+        <div class="project-page">
+            <header>
+                <picture>
+                    <source data-srcset="./assets/images/xbox/xbox_header@2x.webp" type="image/webp">
+                    <source data-srcset="./assets/images/xbox/xbox-header@2x.jpg" type="image/jpeg"><img class="lazy" data-src="./assets/images/xbox/xbox-header@2x.jpg" alt="3d rendering of arcade" src="./assets/images/xbox/xbox-super-small.jpg">
+                </picture>
+            </header>
+            <section class="two-column">
+                <div class="two-column__heading">
+                    <h1 class="project-page__title">XBOX DESIGN STUDIO</h1><span class="sub-head">UX/UI, SUPER SECRET PRODUCT DESIGN</span>
+                    <h2 class="section-title"> <span><span class="label">Client: </span><span>Microsoft Xbox</span></span><span><span class="label">Agency: </span><span>Collabera</span></span></h2>
+                </div>
+                <div class="two-column__description">
+                    <p>Off and on I’ve accumulated a couple years of time at the Xbox Design Studio, working a variety of projects both large and small. And that’s a bit of a pun, as Xbox has apps for mobile, desktop, and the television with the Xbox console. I learned a lot, designing for every screen size, and every input method - work that includes the localization of of marketing assets, creating and managing design libraries for designers and developers, and working with different feature teams to build out user flows and scenarios.
+                    </p>
+                    <p>Design parity is essential on many projects, and Xbox is no different. Customers use features between mobile, desktop, and console, and may even switch between platforms during certain workflows.
+                    </p>
+                    <p>I find there’s always a level of tension between how we designers balance when to invoke a native OS solution versus when we provide our own bespoke solution. This highlights the need to stay current with all the software and hardware touchpoints where customers interface with your products.
+                    </p>
+                </div>
+            </section>
+            <section class="full-image">
+                <picture>
+                    <source data-srcset="./assets/images/xbox/xbox_1@2x.webp" type="image/webp">
+                    <source data-srcset="./assets/images/xbox/xbox-1@2x.jpg" type="image/jpeg"><img class="lazy" data-src="./assets/images/xbox/xbox-1@2x.jpg" alt="ux information architecture of tmobile work" src="./assets/images/xbox/super-small-xbox-1@2x.jpg">
+                </picture>
+            </section>
+            <section class="two-column">
+                <div class="two-column__heading"></div>
+                <div class="two-column__description"><video autoplay="" loop="" muted="" poster="assets/video/PC_uploadProfile.jpg">
+                        <source data-src="./assets/video/xbox-image.webm" type="video/webm">
+                        <source data-src="./assets/video/xbox-image.mp4" type="video/mp4"><span>Sorry, your browser doesn't support embedded videos.</span>
+                    </video>
+                    <p>Uploading and editing a photo for a user’s profile is a pretty common experience across platforms, and definitely not unique to Xbox. In fact, for a long time Xbox provided user profile pics.
+                    </p>
+                    <p><span>This pretty simple feature is something I always think about, especially since I’ve spent most of my time as a designer at large companies. From the initial ask for designs, to the feature being implemented and live for customers, the time elapsed was a little over a month. That’s the fastest release I’ve ever seen, </span><i>haha.</i></p>
+                    <p><span>The next feature, Looking For Group (LFG), is a social feature with workflows across devices. LFG allows users to create postings that allow like-minded players to join gaming sessions. A typical scenario is a post created for a future date, moderated throughout the day on a mobile phone, before a game session is launched on PC or console. The experience is also transitory by default, with all actions being taken while engaged in other tasks. In the following example, seen below, the user is watching (a paused) pirate movie, making a quick post to play a pirate game later. </span><i>Arrgh mateys, good times.</i></p>
+                </div>
+            </section>
+            <section class="full-image">
+                <picture>
+                    <source data-srcset="./assets/images/xbox/xbox_2@2x.webp" type="image/webp">
+                    <source data-srcset="./assets/images/xbox/xbox-2@2x.jpg" type="image/jpeg"><img class="lazy" data-src="./assets/images/xbox/xbox-2@2x.jpg" alt="visual comps of tmobile work" src="./assets/images/xbox/super-small-xbox-2@2x.jpg">
+                </picture>
+            </section>
+            <section class="two-column">
+                <div class="two-column__heading"></div>
+                <div class="two-column__description">
+                    <p>One of the most recent projects I worked on was Xbox Game Pass, for mobile and PC. I ended up spending quite some time working on creating shared design libraries. This is an interesting project, where an abundance of content forces a variety of different treatments to both provide both visual (non-competing) interest and differentiation of media type. Trying to both allow images to breathe while allowing for richness through density is always a balancing act.
+                    </p>
+                </div>
+            </section>
+            <section class="full-image">
+                <picture>
+                    <source data-srcset="./assets/images/xbox/xbox_3@2x.webp" type="image/webp">
+                    <source data-srcset="./assets/images/xbox/xbox-3@2x.jpg" type="image/jpeg"><img class="lazy" data-src="./assets/images/xbox/xbox-3@2x.jpg" alt="visual comps of tmobile work" src="./assets/images/xbox/super-small-xbox-3@2x.jpg">
+                </picture>
+            </section>
+        </div>
+        <div class="next-project office">
+            <picture>
+                <source data-srcset="./assets/images/nextProject_office365@2x.webp" type="image/webp">
+                <source data-srcset="./assets/images/next-project-office-365@2x.jpg" type="image/jpeg"><img class="lazy" data-src="./assets/images/next-project-office-365@2x.jpg" alt="office 365 project teaser image">
+            </picture><a href="./office.html"> <span>View Next Project</span><span class="title">MICROSOFT OFFICE 365</span></a>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="copyright"><span class="name">BRUCE BENSON </span><span>©2020. All Rights Reserved</span></div>
+            <div class="social"><a class="instagram" href="https://www.instagram.com/brucebensondesign/" aria-label="Bruce on Instagram" target="_blank"><img src="./assets/images/instagram-logo.svg" /></a><a class="linkedin" href="https://www.linkedin.com/in/bruce-benson-415352b2/" aria-label="Bruce on LinkedIn" target="_blank"><img src="./assets/images/linkedin-logo.svg" /></a></div>
+        </footer>
+        <script type="text/javascript" src="js/slider.js"></script>
+        <script type="text/javascript" src="js/lazyload.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+
+</html>

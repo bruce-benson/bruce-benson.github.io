@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--include head-->
+    <head>
+        <title>Bruce Benson, some kind of designer</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&amp;display=swap" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <style type="text/css">
+            /* body>*:not(#loading) {
+                visibility: hidden;
+                opacity: 0;
+            } */
+
+            #loading {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: white;
+                z-index: 10000;
+                position: relative;
+            }
+
+            #loading>span {
+                padding-top: calc(100vh - 50%);
+                display: block;
+                font-size: 82px;
+                font-weight: 900;
+                font-style: italic;
+                line-height: 0.77;
+                letter-spacing: -2.89px;
+                transform: rotate(-5deg);
+            }
+
+            #loading>img {
+                animation: rotate .3s cubic-bezier(0.4, 0, 1, 1) infinite;
+                width: 100px;
+            }
+
+            #loading.hidden {
+                display: none;
+            }
+
+            @keyframes rotate {
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+        <link href="app.css" rel="stylesheet">
+    </head>
+
+    <body class="project about">
+        <!--include loader-->
+        <div id="loading"><img src="./assets/images/color-spinner.png" alt="website is loading" /></div>
+        <!--include nav-->
+        <nav><a class="logo" href="./index.html">Bruce Benson</a><button id="nav-trigger" aria-label="open navigation menu" aria-haspopup="true"></button>
+            <ul class="nav-links hidden">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./office.html">Office 365 Commerce</a></li>
+                <li><a href="./azure.html">Azure Playfab</a></li>
+                <li><a href="./tmobile.html">T-Mobile DIGITS</a></li>
+                <li><a href="./xbox.html">Xbox Design Studio</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
+        <!-- main -->
+        <div class="project-page">
+            <header>
+                <picture>
+                    <source srcset="./assets/images/about/about-header-crop.webp" type="image/webp">
+                    <source srcset="./assets/images/about/about-header-crop.jpg" type="image/jpeg"><img src="./assets/images/about/about-header-crop.jpg" alt="Bruce's desk">
+                </picture>
+            </header>
+            <section class="two-column">
+                <div class="two-column__heading">
+                    <h1 class="project-page__title">ABOUT ME</h1><span class="sub-head"> </span>
+                    <h2 class="section-title"> <span><span class="label">FAVORITE BEVERAGE: </span><span>FLAT WHITE LATTE</span></span><span><span class="label">CURRENTLY LISTENING TO: </span><span>MISFITS</span></span></h2>
+                </div>
+                <div class="two-column__description">
+                    <p><span>Hey, I’m Bruce </span><s>Wayne</s><span> Benson, and I’m a designer in the Pacific NorthWest, the place full of hiking, biking, flannels and fishing… </span><i>things I don’t do. </i><span>Instead, I spend way too much time </span><i>(is there such a thing?) </i><span>on art, from drawing to short films. I read lots of comics, watch horror movies, am a lifelong Trekkie, and am always up for Jeopardy.</span></p>
+                    <p>For me, design is fundamentally about communication. Whether it’s reorganizing information architecture to communicate how systems work, choosing colors to communicate the state of things, or creating an illustration style to communicate tone.</p>
+                    <p><span>I enjoy problem solving </span><i>(or if you’re an optimist, finding solutions) </i><span>in this space. Simply put, I like to fix things and make them look cool.</span></p>
+                </div>
+            </section>
+        </div>
+        <blockquote>
+            <p>Let's connect.<a href="https://www.linkedin.com/in/bruce-benson-415352b2/" target="_blank">LinkedIn</a><a href="./assets/documents/brucebenson_resume.pdf" target="_blank">Resume</a></p>
+        </blockquote>
+        <!-- Footer -->
+        <footer>
+            <div class="copyright"><span class="name">BRUCE BENSON </span><span>©2020. All Rights Reserved</span></div>
+            <div class="social"><a class="instagram" href="https://www.instagram.com/brucebensondesign/" aria-label="Bruce on Instagram" target="_blank"><img src="./assets/images/instagram-logo.svg" /></a><a class="linkedin" href="https://www.linkedin.com/in/bruce-benson-415352b2/" aria-label="Bruce on LinkedIn" target="_blank"><img src="./assets/images/linkedin-logo.svg" /></a></div>
+        </footer>
+        <script type="text/javascript" src="js/slider.js"></script>
+        <script type="text/javascript" src="js/lazyload.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--include head-->
+    <head>
+        <title>Bruce Benson, some kind of designer</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&amp;display=swap" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <style type="text/css">
+            /* body>*:not(#loading) {
+                visibility: hidden;
+                opacity: 0;
+            } */
+
+            #loading {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: white;
+                z-index: 10000;
+                position: relative;
+            }
+
+            #loading>span {
+                padding-top: calc(100vh - 50%);
+                display: block;
+                font-size: 82px;
+                font-weight: 900;
+                font-style: italic;
+                line-height: 0.77;
+                letter-spacing: -2.89px;
+                transform: rotate(-5deg);
+            }
+
+            #loading>img {
+                animation: rotate .3s cubic-bezier(0.4, 0, 1, 1) infinite;
+                width: 100px;
+            }
+
+            #loading.hidden {
+                display: none;
+            }
+
+            @keyframes rotate {
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+        <link href="app.css" rel="stylesheet">
+    </head>
+
+    <body class="project tmobile">
+        <!--include loader-->
+        <div id="loading"><img src="./assets/images/color-spinner.png" alt="website is loading" /></div>
+        <!--include nav-->
+        <nav><a class="logo" href="./index.html">Bruce Benson</a><button id="nav-trigger" aria-label="open navigation menu" aria-haspopup="true"></button>
+            <ul class="nav-links hidden">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./office.html">Office 365 Commerce</a></li>
+                <li><a href="./azure.html">Azure Playfab</a></li>
+                <li><a href="./tmobile.html">T-Mobile DIGITS</a></li>
+                <li><a href="./xbox.html">Xbox Design Studio</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
+        <!-- main -->
+        <div class="project-page">
+            <header>
+                <picture>
+                    <source data-srcset="./assets/images/tmobile/tmobile_header@2x.webp" type="image/webp">
+                    <source data-srcset="./assets/images/tmobile/tmobile-header@2x.jpg" type="image/jpeg"><img class="lazy" data-src="./assets/images/tmobile/tmobile-header@2x.jpg" alt="3d rendering of phone" src="./assets/images/tmobile/tmobile-super-small.jpg">
+                </picture>
+            </header>
+            <section class="two-column">
+                <div class="two-column__heading">
+                    <h1 class="project-page__title">T-MOBILE DIGITS </h1><span class="sub-head">UX/UI, DESIGN SYSTEM</span>
+                    <h2 class="section-title"> <span><span class="label">Client: </span><span>T-Mobile </span></span><span><span class="label">Agency: </span><span>Collabera</span></span></h2>
+                </div>
+                <div class="two-column__description">
+                    <p>I worked as a UX designer for T-Mobile on a native mobile/tablet and desktop webapp. The concept of this product, Digits, is simple enough: add and use multiple phone lines on a single phone. Except, while I was working on the Digits team, the actual project I was working on was a rebrand and repackaging of the app for enterpise customers.
+                    </p>
+                    <p><span>The project was pretty straightforward if there is such a thing, but each customer </span><i>(whom must remain unnamed) </i><span>had their own sets of requirements and challenges.</span></p>
+                    <p>But with Digits as a starting point, the team got started. Another UX designer and myself were responsible for the audio and video calling, voicemail, visual voicemail, and settings features. We were also heavily involved in contact management, and how the app would “speak” with the phone, or device it was running on.
+                    </p>
+                </div>
+            </section>
+            <section class="full-image">
+                <picture>
+                    <source data-srcset="./assets/images/tmobile/tmobile_1@2x.webp" type="image/webp">
+                    <source data-srcset="./assets/images/tmobile/tmobile-1@2x.jpg" type="image/jpeg"><img class="lazy" data-src="./assets/images/tmobile/tmobile-1@2x.jpg" alt="ux information architecture of tmobile work" src="./assets/images/tmobile/super-small-tmobile-1@2x.jpg">
+                </picture>
+            </section>
+            <section class="two-column">
+                <div class="two-column__heading"></div>
+                <div class="two-column__description">
+                    <p>Unfortunately, there’s too much inside baseball and heavy NDA on this project, so I’m only sharing a few things from the publically released consumer Digits I worked on. The challenges of the enterprise apps concerned, in no particular order: PTSN vs. VOIP (calling methods and returns), issued device management vs. BYOD (bring-you-own-device isn’t as cool as BYOB), multiple directory contact management (both centrally managed and user managed), multi-channel and multi-line notifications, and data compliance.
+                    </p>
+                    <p>I know that is really unhelpful to read, even vague, so the TL:DR is that we spent a lot of time working with engineering partners to understand system capabilities and limitations, drawing flowcharts and arguing over whiteboards, to make a product that served our B2B users to the best of our abilities.
+                    </p>
+                </div>
+            </section>
+            <section class="full-image">
+                <picture>
+                    <source data-srcset="./assets/images/tmobile/tmobile_2@2x.webp" type="image/webp">
+                    <source data-srcset="./assets/images/tmobile/tmobile-2@2x.jpg" type="image/jpeg"><img class="lazy" data-src="./assets/images/tmobile/tmobile-2@2x.jpg" alt="visual comps of tmobile work" src="./assets/images/tmobile/super-small-tmobile-2@2x.jpg">
+                </picture>
+            </section>
+        </div>
+        <div class="next-project xbox">
+            <picture>
+                <source data-srcset="./assets/images/nextProject_xbox@2x.webp" type="image/webp">
+                <source data-srcset="./assets/images/next-project-xbox@2x.jpg" type="image/jpeg"><img class="lazy" data-src="./assets/images/next-project-xbox@2x.jpg" alt="xbox teaser image">
+            </picture><a href="./xbox.html"> <span>View Next Project</span><span class="title">XBOX DESIGN STUDIO</span></a>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="copyright"><span class="name">BRUCE BENSON </span><span>©2020. All Rights Reserved</span></div>
+            <div class="social"><a class="instagram" href="https://www.instagram.com/brucebensondesign/" aria-label="Bruce on Instagram" target="_blank"><img src="./assets/images/instagram-logo.svg" /></a><a class="linkedin" href="https://www.linkedin.com/in/bruce-benson-415352b2/" aria-label="Bruce on LinkedIn" target="_blank"><img src="./assets/images/linkedin-logo.svg" /></a></div>
+        </footer>
+        <script type="text/javascript" src="js/slider.js"></script>
+        <script type="text/javascript" src="js/lazyload.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+
+</html>

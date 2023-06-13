@@ -1,18 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Bruce Benson, some kind of designer</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&amp;display=swap" rel="stylesheet"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <link href="./assets/css/index.css" rel="stylesheet"></head>
-  <body>
-    <div class="home-page">
-      <img class="background-img" src="./assets/img/about-header.jpg" alt="some cool spooky desk cluster" />
-      <header>
-        <h1>Coming soon...</h1>
-        <p>In the meantime you can find me on <a href="https://www.linkedin.com/in/bruce-benson-415352b2/">LinkedIn</a>.</p>
-      </header>
-    </div>
-    <script src="./assets/js/index.js"></script>
-  </body>
+    <!--include head-->
+    <head>
+        <title>Bruce Benson, some kind of designer</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i&amp;display=swap" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <style type="text/css">
+            /* body>*:not(#loading) {
+                visibility: hidden;
+                opacity: 0;
+            } */
+
+            #loading {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: white;
+                z-index: 10000;
+                position: relative;
+            }
+
+            #loading>span {
+                padding-top: calc(100vh - 50%);
+                display: block;
+                font-size: 82px;
+                font-weight: 900;
+                font-style: italic;
+                line-height: 0.77;
+                letter-spacing: -2.89px;
+                transform: rotate(-5deg);
+            }
+
+            #loading>img {
+                animation: rotate .3s cubic-bezier(0.4, 0, 1, 1) infinite;
+                width: 100px;
+            }
+
+            #loading.hidden {
+                display: none;
+            }
+
+            @keyframes rotate {
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+        <link href="app.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--include loader-->
+        <div id="loading"><img src="assets/images/color-spinner.png" alt="website is loading" /></div>
+        <!--include nav-->
+        <nav><a class="logo" href="./index.html">Bruce Benson</a><button id="nav-trigger" aria-label="open navigation menu" aria-haspopup="true"></button>
+            <ul class="nav-links hidden">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./office.html">Office 365 Commerce</a></li>
+                <li><a href="./azure.html">Azure Playfab</a></li>
+                <li><a href="./tmobile.html">T-Mobile DIGITS</a></li>
+                <li><a href="./xbox.html">Xbox Design Studio</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
+        <!-- main -->
+        <div class="slides">
+            <section class="slide in-view" id="intro">
+                <div class="background">
+                    <picture>
+                        <source data-srcset="assets/images/sketches/sketch1.png" type="image/png"><img class="lazy" data-src="assets/images/sketches/sketch1.png" alt="random doodles" src="assets/images/sketches/sketch-super-small.png">
+                    </picture>
+                </div>
+                <h1> <span class="intro-text">MY NAME IS BRUCE BENSON AND I DO…</span><span class="primary-text main-heading"><span>SOME KIND </span><span>OF DESIGN<span class="spin-star">*</span></span></span><span class="disclaimer">* I HATE KEEPING UP WITH LABELS - UX, UI, PRODUCT, VISUAL, ETC. I FIGURE THINGS OUT AND TRY TO MAKE THEM LOOK COOL ;)</span></h1>
+            </section>
+            <section class="slide" id="office">
+                <div class="background">
+                    <picture>
+                        <source data-srcset="assets/images/office/greenStripe.webp" type="image/webp">
+                        <source data-srcset="assets/images/office/greenStripe@1x.jpg" type="image/jpeg"><img class="lazy" data-src="assets/images/office/greenStripe@1x.jpg" alt="3d rendering of old school computer" src="assets/images/office/office-super-small.jpg">
+                    </picture>
+                </div>
+                <a class="project-title" href="office.html">
+                    <div class="project-title__link">
+                        <h2 class="main-heading">Microsoft Office 365<span>UX/UI, SUPER SECRET PRODUCT DESIGN</span></h2>
+                    </div>
+                </a>
+            </section>
+            <section class="slide" id="azure">
+                <div class="background">
+                    <picture>
+                        <source data-srcset="assets/images/azure/playfab_header@2x.webp" type="image/webp">
+                        <source data-srcset="assets/images/azure/playfab-header@2x.jpg" type="image/jpeg"><img class="lazy" data-src="assets/images/azure/playfab-header@2x.jpg" alt="3d rendering of arcade" src="assets/images/azure/playfab-super-small.jpg">
+                    </picture>
+                </div>
+                <a class="project-title block-style" href="azure.html">
+                    <div class="project-title__link">
+                        <h2 class="main-heading">Azure Playfab<span>UX/UI, DESIGN SYSTEM</span></h2>
+                    </div>
+                </a>
+            </section>
+            <section class="slide" id="tmobile">
+                <div class="background">
+                    <picture>
+                        <source data-srcset="assets/images/tmobile/tmobile_header@2x.webp" type="image/webp">
+                        <source data-srcset="assets/images/tmobile/tmobile-header@2x.jpg" type="image/jpeg"><img class="lazy" data-src="assets/images/tmobile/tmobile-header@2x.jpg" alt="3d rendering of phone" src="assets/images/tmobile/tmobile-super-small.jpg">
+                    </picture>
+                </div>
+                <a class="project-title" href="tmobile.html">
+                    <div class="project-title__link">
+                        <h2 class="main-heading">T-Mobile DIGITS</h2><span>UX/UI, PRODUCT DESIGN</span>
+                    </div>
+                </a>
+            </section>
+            <section class="slide" id="xbox">
+                <div class="background">
+                    <picture>
+                        <source data-srcset="assets/images/xbox/xbox_header@2x.webp" type="image/webp">
+                        <source data-srcset="assets/images/xbox/xbox-header@2x.jpg" type="image/jpeg"><img class="lazy" data-src="assets/images/xbox-header@2x.jpg" alt="3d rendering of arcade" src="assets/images/xbox/xbox-super-small.jpg">
+                    </picture>
+                </div>
+                <a class="project-title block-style" href="xbox.html">
+                    <div class="project-title__link">
+                        <h2 class="main-heading">Xbox Design Studio<span>UX/UI, PRODUCTION</span></h2>
+                    </div>
+                </a>
+            </section>
+            <section class="slide" id="about">
+                <div class="background">
+                    <picture>
+                        <source data-srcset="assets/images/about/about-header-right.webp" type="image/webp">
+                        <source data-srcset="assets/images/about/about-header-right.jpg" type="image/jpeg"><img class="lazy" data-src="assets/images/about/about-header-right.jpg" alt="actual picture of Bruce's work space" src="assets/images/about/about-super-small.jpg">
+                    </picture>
+                </div>
+                <a class="project-title block-style" href="about.html">
+                    <div class="project-title__link">
+                        <h2 class="main-heading">ABOUT<span>WHO THE #@%&amp; IS THIS GUY?</span></h2>
+                    </div>
+                </a>
+            </section>
+        </div>
+        <footer>
+            <div class="copyright"><span class="name">BRUCE BENSON </span><span>©2020. All Rights Reserved</span></div>
+            <div class="social"><a class="instagram" href="https://www.instagram.com/brucebensondesign/" aria-label="Bruce on Instagram" target="_blank"><img src="assets/images/instagram-logo.svg" /></a><a class="linkedin" href="https://www.linkedin.com/in/bruce-benson-415352b2/" aria-label="Bruce on LinkedIn" target="_blank"><img src="assets/images/linkedin-logo.svg" /></a></div>
+        </footer>
+        <script type="text/javascript" src="js/slider.js"></script>
+        <script type="text/javascript" src="js/lazyload.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+
 </html>
