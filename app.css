@@ -372,4 +372,14 @@ figcaption {
       padding: 20px 60px;
     }
   }
-  
+
+.slides {
+  scroll-snap-type: y mandatory;
+  overflow: scroll;
+  height: 100vh;
+}
+
+.slide {
+  scroll-snap-align: start;
+  height: 100vh;
+}
