@@ -387,3 +387,69 @@ figcaption {
   scroll-snap-align: start;
   height: 100vh;
 }
+
+.project-title {
+  width: unset;
+  max-width: 720px;
+}
+
+.main-heading {
+  line-height: 0.9;
+  text-align: center;
+}
+
+#intro {
+  background-color: black;
+}
+
+#intro .main-heading {
+  font-size: 64px;
+  font-weight: 800;
+  max-width: none;
+}
+
+#intro .description {
+  color: white;
+  text-align: center;
+}
+
+#tmobile .main-heading {
+  color: #E20074;
+}
+
+.about {
+  background: white;
+}
+
+@media (max-width: 768px){
+  .main-heading br {
+    display: none;
+  }
+}
+
+@media (min-width: 768px){
+  .main-heading {
+    font-size: 64px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .main-heading > span {
+    padding-top: 24px;
+  }
+
+  .project-page .two-column__description {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 500px) {
+  .project-page .two-column__heading {
+    padding-right: 0;
+  }
+}
+
+.project-page h2 {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
